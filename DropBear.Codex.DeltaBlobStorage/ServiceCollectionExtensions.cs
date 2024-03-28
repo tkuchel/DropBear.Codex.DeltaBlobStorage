@@ -1,5 +1,5 @@
 ﻿namespace DropBear.Codex.DeltaBlobStorage;
 
-public class Class1
+public static class ServiceCollectionExtensions
 {
 }
