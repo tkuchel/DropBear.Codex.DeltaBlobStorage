@@ -9,7 +9,7 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddDeltaBlobStorage(this IServiceCollection services)
     {
         services.AddDropBearCodexFiles();
-        services.AddScoped<ExtendedFileManager>();
+        services.AddScoped<BlobFileManager>();
 
         return services;
     }
