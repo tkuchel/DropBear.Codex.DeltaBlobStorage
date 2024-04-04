@@ -12,7 +12,6 @@ public class BlobFileManager : FileManager
 {
     private readonly IAppLogger<BlobFileManager> _logger;
     private IBlobStorage? _blobStorage;
-
     public BlobFileManager(IAppLogger<FileManager> baseLogger, IStrategyValidator strategyValidator,
         IMessageTemplateManager messageTemplateManager)
         : base(baseLogger, strategyValidator, messageTemplateManager) =>

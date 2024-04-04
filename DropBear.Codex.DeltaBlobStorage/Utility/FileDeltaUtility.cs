@@ -28,7 +28,6 @@ public static class FileDeltaUtility
             await signatureStream.DisposeAsync().ConfigureAwait(false);
         }
     }
-
     public static async Task<Result<byte[]>> CalculateDeltaBetweenBasisFileAndNewFileAsync(byte[]? signatureFileData,
         byte[]? newFileData)
     {
@@ -65,7 +64,6 @@ public static class FileDeltaUtility
             return Result<byte[]>.Failure("FailedToCalculateDeltaBetweenBasisFileAndNewFile");
         }
     }
-
     public static async Task<Result<byte[]>> ApplyDeltaToBasisFileAsync(byte[]? basisFileData, byte[]? deltaFileData)
     {
         if (basisFileData is null || basisFileData.Length is 0) return Result<byte[]>.Failure("EmptyBasisFileData");
